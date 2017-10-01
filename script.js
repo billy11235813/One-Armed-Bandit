@@ -467,8 +467,8 @@ function showWin(){
 	$("#money1").text(money);
 	slotSound.pause();
 	slotSound.currentTime = 0;
-	$("#startButton").prop('disabled','false'); 
-	$("#buttonMore").prop('disabled','false');  
-	$("#buttonLess").prop('disabled','false'); 
+	$("#startButton").prop('disabled',null); 
+	$("#buttonMore").prop('disabled',null);  
+	$("#buttonLess").prop('disabled',null); 
 }
  $(document).ready(main);

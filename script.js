@@ -186,11 +186,11 @@ function stopRolls(){
 			intervalId2 = setInterval(play,37300);
 			money-=bet;
 			$("#money1").text(money);
-			$("#buttonMore").prop('disabled','true'); 
-			$("#buttonLess").prop('disabled','true');
+			/*$("#buttonMore").prop('disabled','true'); 
+			$("#buttonLess").prop('disabled','true');*/
 		}
 		if(i==2){
-			$("#startButton").prop('disabled','true');  
+			//$("#startButton").prop('disabled','true');  
 			clearInterval(intervalId);
 			intervalId = setInterval(play2,turningSpeed);
 			$("#startButton").text("Play");
@@ -467,8 +467,8 @@ function showWin(){
 	$("#money1").text(money);
 	slotSound.pause();
 	slotSound.currentTime = 0;
-	$("#startButton").prop('disabled',null); 
-	$("#buttonMore").prop('disabled',null);  
-	$("#buttonLess").prop('disabled',null); 
+	/*$("#startButton").prop('disabled','false'); 
+	$("#buttonMore").prop('disabled','false');  
+	$("#buttonLess").prop('disabled','false'); */
 }
  $(document).ready(main);
